@@ -1,0 +1,54 @@
+body {
+  margin-top: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+h2 {
+  color: #203248;
+  margin-top: 1.5em;
+}
+
+.version-heading {
+  margin: 0;
+  margin-top: 1em;
+  font-weight:300;
+}
+
+.author-heading {
+  font-weight:300;
+  color: #203248;
+
+}
+
+.table {
+  margin: 2em 0;
+}
+
+#navbarTitleImg {
+  height: 1.5em;
+  margin-top: -0.25em;
+}
+
+.navbar-inverse {
+  background-color: #282828;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  /*background-color: #182535;*/
+}
+
+.banner {
+  background-color:#203248;
+  /*background-image: url("../media/pics/wood-768.png");*/
+  background-image: url("../media/pics/Banner-703.png");
+  background-size: cover;
+  background-position: center;
+  min-height:33em;
+  width: auto;
+  width: 100%;
+}
