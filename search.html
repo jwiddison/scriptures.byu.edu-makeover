@@ -1,35 +1,18 @@
-<div class="sciwrapper">
-    <div id="scicrumb" style="opacity: 1;">
-        <ul class="crumb">
-            <li class="lastcrumb">
-                <span class="largecrumb">Search</span>
-                <span class="smallcrumb">Search</span>
-            </li>
-        </ul>
-      <div class="tabBar">
-        <ul class="tabs">
-          <li class="tab citab">
-            <a href="javascript:void(0);" onclick="getSci();"><span class="tablabel">Citation Index</span></a>
-          </li><li class="tab conttab">
-            <a href="javascript:void(0);" onclick="getContents();"><span class="tablabel">Contents</span></a>
-          </li><li class="tab speaktab">
-            <a href="javascript:void(0);" onclick="getSpeaker();"><span class="tablabel">Speakers</span></a>
-          </li><li class="tab searchtab">
-            <a href="javascript:void(0);" onclick="getSearch();"><span class="tablabel">Search</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title">Search</h4>
+  </div>
+<div class="modal-body">
+  <div class="sciwrapper">
     <div id="scisearch" class="scicontent nano"><div class="nano-content">
-        <div id="searchWhatWrapper">
-            <div class="btn-group active" id="searchWhat">
-                <a href="javascript:void(0);" onclick="showTalkSearch();" id="showTalksButton" title="Search in talks" class="btn btn-inverse" disabled>Talks</a>
-                <a href="javascript:void(0);" onclick="showScriptureSearch();" id="showScripturesButton" title="Search in scriptures" class="btn">Scriptures</a>
-            </div>
+      <div id="searchWhatWrapper">
+        <div class="btn-group active" id="searchWhat">
+          <a href="javascript:void(0);" onclick="showTalkSearch();" id="showTalksButton" title="Search in talks" class="btn btn-inverse" disabled>Talks</a>
+          <a href="javascript:void(0);" onclick="showScriptureSearch();" id="showScripturesButton" title="Search in scriptures" class="btn">Scriptures</a>
         </div>
+      </div>
         <div id="searchInput">
-            <input type="text" id="searchTerms" class="asInput" placeholder="Search" title="Enter your search terms" onkeyup="startSearch(event);">
+          <input type="text" id="searchTerms" class="asInput" placeholder="Search" title="Enter your search terms" onkeyup="startSearch(event);">
         </div>
         <!-- Scripture Search Form -->
         <div id="searchScripturesWrapper" class="hidden">
@@ -988,7 +971,7 @@
                 </div>
                 <div class="advTitle">Content Source</div><div class="advTalks">
                     <label class="checkbox" title="Include General Conference talks">
-                        <input id="genConf" type="checkbox" checked="checked">General Conference 
+                        <input id="genConf" type="checkbox" checked="checked">General Conference
                     </label>
                     <label class="checkbox" title="Include Journal of Discourses">
                         <input id="jod" type="checkbox" checked="checked">Journal of Discourses
@@ -1002,16 +985,9 @@
                 </label>
             </form>
             <div class="searchBtnWrapper">
-                <button id="talkSearchBtn" onclick="searchTalks();" title="Start the search" class="btn searchbutton">Search</button>
-                <button title="Reset search form to defaults" id="resetTalksForm" onclick="resetTalksForm();" class="btn">Reset</button>
+              <button id="talkSearchBtn" onclick="searchTalks();" title="Start the search" class="btn searchbutton">Search</button>
             </div>
         </div>
-    </div> 
-    </div> 
-
+    </div>
   </div>
-  <div id="blockContentRight">
-    <button type="button" class="toggleVisibilityRight blockContentButton" title="Toggle right panel"/>
-  </div>
-  <button type="button" class="toggleVisibilityRight sidenav sidenavRight" title="Toggle right panel" /><!--
-    -->
+</div>

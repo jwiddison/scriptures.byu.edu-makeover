@@ -1,320 +1,65 @@
-<div class="scripturewrapper">
-    <div id="scripcrumb" style="opacity: 1;">
-        <ul class="crumb">
-            <li class="lastcrumb">
-                <span class="largecrumb">The&nbsp;Scriptures</span>
-                <span class="smallcrumb">Scriptures</span>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LDS Scripture Citation Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, user-scalable=0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="media/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="mainNav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img id="navbarTitleImg" src="media/pics/CitationIndexTitle.png"></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class=""><a href="content.html">Content</a></li>
+            <li class="active"><a href="scriptures.html">Scriptures</a></li>
+            <li class="">
+              <a data-toggle="modal" href="search.html" data-target="#searchModal"><i class="glyphicon glyphicon-search"></i></a>
             </li>
-        </ul>
+          </ul>
+        </div>
+      </div>
     </div>
-    
-    <div class="scripturecontent nano">
-        <div class="nano-content">
-            <div class="volumetitle">Old Testament</div>
-            <ul class="volumecontents"><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=101&chapter=&verses=&jst=')">Genesis</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=102&chapter=&verses=&jst=')">Exodus</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=103&chapter=&verses=&jst=')">Leviticus</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=104&chapter=&verses=&jst=')">Numbers</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=105&chapter=&verses=&jst=')">Deut.</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=106&chapter=&verses=&jst=')">Joshua</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=107&chapter=&verses=&jst=')">Judges</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=108&chapter=&verses=&jst=')">Ruth</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=109&chapter=&verses=&jst=')">1 Samuel</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=110&chapter=&verses=&jst=')">2 Samuel</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=111&chapter=&verses=&jst=')">1 Kings</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=112&chapter=&verses=&jst=')">2 Kings</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=113&chapter=&verses=&jst=')">1 Chronicles</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=114&chapter=&verses=&jst=')">2 Chronicles</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=115&chapter=&verses=&jst=')">Ezra</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=116&chapter=&verses=&jst=')">Nehemiah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=117&chapter=&verses=&jst=')">Esther</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=118&chapter=&verses=&jst=')">Job</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=119&chapter=&verses=&jst=')">Psalms</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=120&chapter=&verses=&jst=')">Proverbs</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=121&chapter=&verses=&jst=')">Ecclesiastes</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=122&chapter=&verses=&jst=')">Song of Sol.</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=123&chapter=&verses=&jst=')">Isaiah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=124&chapter=&verses=&jst=')">Jeremiah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=125&chapter=&verses=&jst=')">Lamentations</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=126&chapter=&verses=&jst=')">Ezekiel</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=127&chapter=&verses=&jst=')">Daniel</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=128&chapter=&verses=&jst=')">Hosea</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=129&chapter=&verses=&jst=')">Joel</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=130&chapter=&verses=&jst=')">Amos</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=131&chapter=&verses=&jst=')">Obadiah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=132&chapter=&verses=&jst=')">Jonah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=133&chapter=&verses=&jst=')">Micah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=134&chapter=&verses=&jst=')">Nahum</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=135&chapter=&verses=&jst=')">Habakkuk</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=136&chapter=&verses=&jst=')">Zephaniah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=137&chapter=&verses=&jst=')">Haggai</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=138&chapter=&verses=&jst=')">Zechariah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=139&chapter=&verses=&jst=')">Malachi</a>
-                </li><!--
-        --></ul>
-            
-            <div class="volumetitle">New Testament</div>
-            <ul class="volumecontents"><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=140&chapter=&verses=&jst=')">Matthew</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=141&chapter=&verses=&jst=')">Mark</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=142&chapter=&verses=&jst=')">Luke</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=143&chapter=&verses=&jst=')">John</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=144&chapter=&verses=&jst=')">Acts</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=145&chapter=&verses=&jst=')">Romans</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=146&chapter=&verses=&jst=')">1 Corinthians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=147&chapter=&verses=&jst=')">2 Corinthians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=148&chapter=&verses=&jst=')">Galatians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=149&chapter=&verses=&jst=')">Ephesians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=150&chapter=&verses=&jst=')">Philippians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=151&chapter=&verses=&jst=')">Colossians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=152&chapter=&verses=&jst=')">1 Thessalonians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=153&chapter=&verses=&jst=')">2 Thessalonians</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=154&chapter=&verses=&jst=')">1 Timothy</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=155&chapter=&verses=&jst=')">2 Timothy</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=156&chapter=&verses=&jst=')">Titus</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=157&chapter=&verses=&jst=')">Philemon</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=158&chapter=&verses=&jst=')">Hebrews</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=159&chapter=&verses=&jst=')">James</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=160&chapter=&verses=&jst=')">1 Peter</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=161&chapter=&verses=&jst=')">2 Peter</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=162&chapter=&verses=&jst=')">1 John</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=163&chapter=&verses=&jst=')">2 John</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=164&chapter=&verses=&jst=')">3 John</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=165&chapter=&verses=&jst=')">Jude</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=166&chapter=&verses=&jst=')">Revelation</a>
-                </li><!--
-        --></ul>
-            
-            <div class="volumetitle">Book of Mormon</div>
-            <ul class="volumecontents"><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=201&chapter=0&verses=&jst=')">Title Page</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=202&chapter=0&verses=&jst=')">Introduction</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=203&chapter=0&verses=&jst=')">Three Witnesses</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=204&chapter=0&verses=&jst=')">Eight Witnesses</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=205&chapter=&verses=&jst=')">1 Nephi</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=206&chapter=&verses=&jst=')">2 Nephi</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=207&chapter=&verses=&jst=')">Jacob</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=208&chapter=&verses=&jst=')">Enos</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=209&chapter=&verses=&jst=')">Jarom</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=210&chapter=&verses=&jst=')">Omni</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=211&chapter=&verses=&jst=')">Words of Morm.</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=212&chapter=&verses=&jst=')">Mosiah</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=213&chapter=&verses=&jst=')">Alma</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=214&chapter=&verses=&jst=')">Helaman</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=215&chapter=&verses=&jst=')">3 Nephi</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=216&chapter=&verses=&jst=')">4 Nephi</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=217&chapter=&verses=&jst=')">Mormon</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=218&chapter=&verses=&jst=')">Ether</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=219&chapter=&verses=&jst=')">Moroni</a>
-                </li><!--
-        --></ul>
-            
-            <div class="volumetitle">Doctrine and Covenants</div>
-            <ul class="volumecontents"><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=301&chapter=0&verses=&jst=')">Introduction</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=302&chapter=&verses=&jst=')">Sections</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=303&chapter=&verses=&jst=')">Official Decl.</a>
-                </li><!--
-        --></ul>
-            
-            <div class="volumetitle">Pearl of Great Price</div>
-            <ul class="volumecontents"><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=401&chapter=&verses=&jst=')">Moses</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=402&chapter=&verses=&jst=')">Abraham</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=403&chapter=&verses=&jst=')">Facsimiles</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=404&chapter=&verses=&jst=')">JS&mdash;Matthew</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=405&chapter=&verses=&jst=')">JS&mdash;History</a>
-                </li><!--
-            --><li>
-                        <a href="javascript:void(0);" onclick="getScripture('?book=406&chapter=&verses=&jst=')">Articles of Faith</a>
-                </li><!--
-        --></ul>
-    </div> 
-    </div> 
-  </div>
-  <div id="blockContentLeft">
-      <button type="button" class="toggleVisibilityLeft blockContentButton" title="Toggle left panel" />
-  </div>
-  <button type="button" class="toggleVisibilityLeft sidenav sidenavLeft" title="Toggle left panel" />
+
+    <!-- Full-width Banner -->
+    <div class="banner"></div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-center style="padding-top:2em;"">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Search</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="media/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -52,3 +52,14 @@ h2 {
   width: auto;
   width: 100%;
 }
+
+@media (max-width:768px) {
+  .navbar-form {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+.modal-content {
+  padding: 2em;
+}

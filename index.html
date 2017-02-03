@@ -31,6 +31,9 @@
             <li class="active"><a href="index.html">Home</a></li>
             <li class=""><a href="content.html">Content</a></li>
             <li class=""><a href="scriptures.html">Scriptures</a></li>
+            <li class="">
+              <a data-toggle="modal" href="search.html" data-target="#searchModal"><i class="glyphicon glyphicon-search"></i></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -47,7 +50,7 @@
             <h3 class="author-heading">By Stephen W. Liddle and Richard C. Galbraith</h3>
           </div>
 
-          </a><h2 class="sect">Overview</h2>
+          <h2 class="sect">Overview</h2>
           <hr />
           <p>Welcome to the LDS Scripture Citation Index.  This index, found on the right side of your browser window, links from scriptures to the general conference talks, <i>Journal of Discourses</i> speeches, and writings in <i>Teachings of the Prophet Joseph Smith</i> that cite those scriptures.&nbsp; So, for example, suppose you want to know who has cited 1&nbsp;Ne.&nbsp;3:7 in general conference; tap on the First Nephi button followed by the 1&nbsp;Ne.&nbsp;3 button; there you'll find the answer.&nbsp; Who has quoted Matt.&nbsp;5:48?&nbsp; Use the New Testament index to find out.</p>
 
@@ -176,9 +179,24 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-center style="padding-top:2em;"">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Search</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JS -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="media/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/loadModal.js"
 
   </body>
 </html>
