@@ -68,6 +68,12 @@ h2 {
   width: 100%;
 }
 
+@media(max-width:768px;){
+  .banner{
+    display: none;
+  }
+}
+
 .modal-content {
   padding: 2em;
 }

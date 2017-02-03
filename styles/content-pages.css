@@ -1,10 +1,19 @@
 .flex-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
   padding-top:2em;
+}
+
+@media (max-width: 768px){
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px){
+  .content-container, .scripture-container {
+    padding-left: 3em;
+  }
 }
 
 .toc-container {
@@ -17,14 +26,11 @@
   order: 2;
 }
 
-.content-container{
-  padding-left:3em;
-}
-
 ul.versesblock li {
   position: relative;
   display: block;
   margin-bottom: .3em;
+  margin-left:-2em;
 }
 
 div.chapterheading {
@@ -44,7 +50,6 @@ div.navheading {
 }
 
 ul.volumecontents li {
-  /*display: block;*/
   margin-left: -1.5em;
 }
 
