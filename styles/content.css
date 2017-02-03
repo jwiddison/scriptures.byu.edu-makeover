@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+}
+
+.toc-container {
+  padding-top:2em;
+}
+
+.content-container {
+  margin: auto;
+}
+
+.scripture-container {
+  font-family: 'Droid Serif', serif;
+  margin: auto;
+}
+
+ul.versesblock li {
+  position: relative;
+  display: block;
+  margin-bottom: .3em;
+}
+
+div.chapterheading {
+  font-size: 14pt;
+  font-weight: bold;
+  padding: .5em;
+  text-align: center;
+  line-height: 1.2;
+}
+
+div.navheading {
+  font-size: 13pt;
+  text-align: center;
+}
+
+.volumetitle{
+  display:block;
+}
+
+ul.volumecontents li {
+  display: block;
+}
