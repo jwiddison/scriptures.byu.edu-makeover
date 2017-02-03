@@ -1,18 +1,23 @@
 .flex-container {
   display: flex;
-}
-
-.toc-container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
   padding-top:2em;
 }
 
-.content-container {
-  margin: auto;
+.toc-container {
+  order: 1;
 }
 
-.scripture-container {
+.content-container, .scripture-container {
   font-family: 'Droid Serif', serif;
-  margin: auto;
+  order: 2;
+}
+
+.content-container{
+  padding-left:3em;
 }
 
 ul.versesblock li {
@@ -40,4 +45,8 @@ div.navheading {
 
 ul.volumecontents li {
   display: block;
+}
+
+.volumecontents {
+  min-width: 180px;
 }
