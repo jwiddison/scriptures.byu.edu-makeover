@@ -26,6 +26,18 @@ h2 {
   font-weight:300;
 }
 
+.btn-default {
+  background-color: #203248;
+  color:white;
+  border-color: #07192F;
+  margin-bottom: 0.5em;
+}
+
+.btn-default:hover {
+  background-color: #53657B;
+  color:white;
+}
+
 .author-heading {
   font-weight:300;
   color: #203248;
@@ -45,10 +57,6 @@ h2 {
   background-color: #282828;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
-  /*background-color: #182535;*/
-}
-
 .banner {
   background-color:#203248;
   /*background-image: url("../media/pics/wood-768.png");*/
@@ -58,13 +66,6 @@ h2 {
   min-height:33em;
   width: auto;
   width: 100%;
-}
-
-@media (max-width:768px) {
-  .navbar-form {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
 }
 
 .modal-content {

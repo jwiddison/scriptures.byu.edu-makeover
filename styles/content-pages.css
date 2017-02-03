@@ -9,6 +9,7 @@
 
 .toc-container {
   order: 1;
+  min-width: 220px;
 }
 
 .content-container, .scripture-container {
@@ -27,26 +28,34 @@ ul.versesblock li {
 }
 
 div.chapterheading {
-  font-size: 14pt;
+  font-size: 1.9em;
   font-weight: bold;
   padding: .5em;
-  text-align: center;
   line-height: 1.2;
 }
 
 div.navheading {
-  font-size: 13pt;
-  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
-.volumetitle{
+.volumetitle {
   display:block;
 }
 
 ul.volumecontents li {
-  display: block;
+  /*display: block;*/
+  margin-left: -1.5em;
 }
 
-.volumecontents {
-  min-width: 180px;
+#talkPhoto {
+  padding: 1px;
+  background-color: white;
+  border: 1px solid #9ea0a2;
+  box-shadow: 2px 4px 13px #bbb;
+  margin-bottom: 1em;
+}
+
+p.intro {
+  font-size: 0.9em;
 }
